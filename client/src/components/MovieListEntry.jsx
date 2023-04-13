@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 
 var MovieListEntry = ({movie}) => {
-  const [watched, setWatched] = useState(movie.status)
+  const [watchStatus, setWatchStatus] = useState(movie.status)
   const watchClick = (e) => {
     e.preventDefault();
-    return watched === 'to watch' ? setWatched('Watched') : setWatched('to watch');
+    return watchStatus === 'to watch' ? setWatchStatus(movie.status = 'Watched') : setWatchStatus(movie.status = 'to watch');
   }
   return (
     <div className="movieListEntry"
@@ -14,7 +14,7 @@ var MovieListEntry = ({movie}) => {
         border: '1px solid grey',
         borderRadius:1,
         marginRight:45
-      }} >
+      }}>
         {movie.title}
       <button
         style={{
@@ -24,7 +24,7 @@ var MovieListEntry = ({movie}) => {
           color: "white",
           borderRadius:5
           }}
-           onClick={watchClick} >{watched}
+           onClick={watchClick} >{watchStatus}
       </button>
     </div>
   )

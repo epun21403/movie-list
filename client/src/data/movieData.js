@@ -3,14 +3,14 @@ var movieData = [
   {title: 'Hackers', status: 'Watched'},
   {title: 'The Grey', status: 'to watch'},
   {title: 'Sunshine', status: 'to watch'},
-  {title: 'Duck Duck Goose', status: 'Watched'},
-  {title: 'Random Movie Title', status: 'to watch'},
-  {title: 'Place Title Here', status: 'Watched'},
-  {title: 'Change Title', status: 'to watch'},
-  {title: 'Placeholder', status: 'to watch'},
-  {title: 'Update Title', status: 'to watch'},
-  {title: 'TBD', status: 'to watch'},
-  {title: 'Discontinued', status: 'Watched'},
+  {title: 'Ex Machina', status: 'Watched'},
+  {title: 'Creative Title 1', status: 'Watched'},
+  {title: 'Creative Title 2', status: 'to watch'},
+  {title: 'Creative Title 3', status: 'to watch'},
+  {title: 'Creative Title 4', status: 'to watch'},
+  {title: 'Creative Title 5', status: 'to watch'},
+  {title: 'Creative Title 6', status: 'to watch'},
+  {title: 'Creative Title 7', status: 'Watched'},
 ];
 
 export default movieData;

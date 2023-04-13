@@ -28,8 +28,7 @@ var App = () => {
 
   const addClick = (e) => {
     e.preventDefault();
-    var addedMovie = movies.concat([{title: addMovie}]);
-    console.log(addedMovie)
+    var addedMovie = movies.concat([{title: addMovie, status: 'to watch'}]);
     return setMovies(addedMovie);
   }
 
@@ -58,8 +57,8 @@ var App = () => {
       <br></br>
         <Search searchHandler={(e) => searchHandler(e)} handleClick={handleClick} />
       <br></br>
-      <button onClick={watchedClick}>Watched</button>
-      <button onClick={toWatchClick}>to watch</button>
+      <button onClick={watchedClick} style={{paddingBottom:15, paddingTop:15, paddingLeft:5, paddingRight:5, backgroundColor: '#5ab812', color: 'white'}}>Watched</button>
+      <button onClick={toWatchClick} style={{paddingBottom:15, paddingTop:15, paddingLeft:5, paddingRight:5}}>to watch</button>
       <div>
         <MovieList movies={movies} />
       </div>
